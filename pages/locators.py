@@ -14,6 +14,13 @@ class ProductPageLocators ():
 	PRICE = (By.CSS_SELECTOR, "#content_inner > article > div.row > div.col-sm-6.product_main > p.price_color")
 	NAME_OF_BOOK_MESSAGE = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div > strong")
 	NAME_OF_BOOK = (By.CSS_SELECTOR, "#content_inner > article > div.row > div.col-sm-6.product_main > h1")
+	SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+	
+		
 		
 	
 		
