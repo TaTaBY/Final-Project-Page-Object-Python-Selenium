@@ -9,11 +9,11 @@ from pages.login_page import LoginPage
 
 @pytest.mark.need_review
 def test_guest_can_add_product_to_basket(browser):
-    link = f"http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0"
+    link = f"http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
     page = BasePage(browser, link)
     page.open()
     product_page = ProductPage(browser, browser.current_url)
-    
+
 @pytest.mark.need_review
 def test_guest_can_go_to_login_page_from_product_page(browser):
     link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-city-and-the-stars_95/"
