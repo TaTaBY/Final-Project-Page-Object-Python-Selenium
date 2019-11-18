@@ -8,6 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from .locators import BasePageLocators
 
 
+
 class BasePage():
     def __init__(self, browser, url, timeout=10):
         self.browser = browser
@@ -66,4 +67,7 @@ class BasePage():
     def go_to_basket_page(self):
         link = self.browser.find_element(*BasePageLocators.BASKET_LINK)
         link.click()
-        time.sleep(5)
+        
+    
+
+    

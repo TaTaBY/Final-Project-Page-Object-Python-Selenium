@@ -14,3 +14,4 @@ class BasketPage(BasePage):
     	print (self.browser.find_element(*BasketPageLocators.BASKET_MESSAGE_EMPTY).text)
     	assert self.browser.find_element(*BasketPageLocators.BASKET_MESSAGE_EMPTY).text == "Your basket is empty. Continue shopping", "Message not present"
 
+   
